@@ -3,6 +3,7 @@ ERLC=erlc
 LIB=vorarbeiter
 
 compile:
+	[[ -d ebin ]] || mkdir ebin
 	@$(ERLC) -o ebin src/*.erl
 
 clean:
@@ -14,7 +15,3 @@ docs:
 
 clean-docs:
 	rm -f doc/edoc-info doc/*.html doc/*.css doc/*.png
-
-test: compile
-	@$(ERL) -pa ebin -eval "eunit:test({application,$(APP)})" \
-	-noshell -s init stop
