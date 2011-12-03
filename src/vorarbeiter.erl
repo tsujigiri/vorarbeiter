@@ -34,7 +34,7 @@ vorarbeiter(NoOfWorkers) ->
 			io:format("~p died: ~p~n", [ Pid, Why ]),
 			spawn_n_workers(1, self())
 	end,
-	vorarbeiter(NoOfWorkers).
+	vorarbeiter(0).
 
 
 %% @doc The worker loop, asking the Vorarbeiter for work and executing it, returning the result directly to the client.
