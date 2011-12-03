@@ -1,8 +1,8 @@
-= vorarbeiter
+# vorarbeiter
 
 Vorarbeiter acts as a queue for distributing workload to a designated number of worker processes.
 
-== Synopsis
+## Synopsis
 
 	% create a queue with 4 worker processes
 	Queue = vorarbeiter:new(4),
