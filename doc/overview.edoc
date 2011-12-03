@@ -1,0 +1,5 @@
+@author Helge Rausch <helge@rausch.io>
+@copyright 2011 Helge Rausch
+@version 0.0.1
+@title Welcome to the `vorarbeiter' library!
+@doc `vorarbeiter' assigns your workload to a designated number of workers.
